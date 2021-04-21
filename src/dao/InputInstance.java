@@ -24,7 +24,7 @@ public class InputInstance {
             isr = new InputStreamReader(is, StandardCharsets.UTF_8);
             br = new BufferedReader(isr);
             String line = br.readLine();
-            Tabuleiro.setN(Integer.parseInt(line));
+            Tabuleiro.setN(Integer.parseInt(line.trim()));
             int[][] luzes = new int[Tabuleiro.N][Tabuleiro.N];
             for(int i=0; i<Tabuleiro.N; i++) {
                 line = br.readLine();
